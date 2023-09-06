@@ -13,7 +13,7 @@ Customer::Customer() : Person()
   _history = new std::vector<Purchase>();
 }
 
-Customer::Customer(std::string name, std::string email, std::string phone) : Person::Person(name, email, phone)
+Customer::Customer(std::string name, std::string email, std::string phone) : Person(name, email, phone)
 {
   _history = new std::vector<Purchase>();
 }
