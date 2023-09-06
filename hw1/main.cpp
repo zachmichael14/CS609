@@ -3,20 +3,36 @@
 
 #include "person.h"
 
-int main() {  
+int main() {
 
-    Person p1("J", "2asd@sd.com", "123456");
-    Person p2;
+    /////// TEST FOR USER-CREATED PERSON //////
 
-    std::cout << "P1: " << p1.name() << std::endl; 
+    char choice;
 
-    p2.name("Z");
+    std::cout << "Choice, A or M?";
+    std::cin >> choice;
 
-    std::cout << "P2: " << p2.name() << std::endl; 
+    if (choice == 'A') {
+        std::string name;
+        std::string email;
+        std::string phone;
+        
+        std::cout << "Name: ";
+        std:: cin >> name;
 
-    return 0;
+        std::cout << "Email: ";
+        std:: cin >> email;
 
+        std::cout << "Phone: ";
+        std:: cin >> phone;
 
+        Person p1(name, email, phone);
+
+        std::cout << "Person " << p1.name() << " created." << std::endl;
+        std::cout << p1.email() << p1.phone() << std::endl;
+    } 
+
+    ////// END PERSON TEST ///////
 
     // // Prompt for company name 
     // std::cout << "Company Name: " << std::endl;
@@ -30,5 +46,5 @@ int main() {
     // std::cout << "The name of the company is: " << company_name <<std::endl;
 
     // // Return an exit status (0 indicates success)
-    // return 0;
+    return 0;
 }
