@@ -29,9 +29,9 @@ public:
 
 private:
   std::string _name;
-  std::string _email
+  std::string _email;
   std::string _phone;
 
-}
+};
 
 #endif // PERSON_H
