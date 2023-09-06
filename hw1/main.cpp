@@ -2,16 +2,20 @@
 #include <string>
 
 #include "person.h"
+#include "purchase.h"
+
 
 int main() {
 
     /////// TEST FOR USER-CREATED PURCHASE //////
-
+    char choice;
+    std::cout << "Choice, A or M?";
+    std::cin >> choice;
 
     if (choice == 'A') {
         std::string item;
-        std::string qty;
-        std::string cost;
+        int qty;
+        double cost;
         
         std::cout << "Item: ";
         std:: cin >> item;

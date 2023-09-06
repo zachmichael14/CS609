@@ -5,20 +5,20 @@
 #include <string>
 #include "purchase.h"
 
-Purchase::Purchase(std::string item, int qty, double cost) : _item(item), _qty(qty), _cost(cost)
+Purchase::Purchase(std::string item, int qty, double cost) : _item(item), _qty(qty), _cost(cost) {}
 
-std::string item() const {
+std::string Purchase::item() const {
   return _item;
 }
 
-int qty() const {
+int Purchase::qty() const {
   return _qty;
 }
 
-double cost() const {
+double Purchase::cost() const {
   return _cost;
 }
 
-double total() const {
+double Purchase::total() const {
   return _cost * _qty;
 }
