@@ -10,16 +10,15 @@ class Employee : public Person
 {
 public:
   // Default constructor
-  Employee() {};
+  Employee();
 
   // Parameterized constructor
-  Employee(std::string _name, std:string _email, std::string _phone, double _salary) {};
+  Employee(std::string _name, std::string _email, std::string _phone, double _salary);
 
   double salary() const;
   void salary(double salary);
 
 private:
   double _salary;
-
 };
 #endif
