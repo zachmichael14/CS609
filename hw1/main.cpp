@@ -5,32 +5,57 @@
 
 int main() {
 
-    /////// TEST FOR USER-CREATED PERSON //////
+    /////// TEST FOR USER-CREATED PURCHASE //////
 
-    char choice;
-
-    std::cout << "Choice, A or M?";
-    std::cin >> choice;
 
     if (choice == 'A') {
-        std::string name;
-        std::string email;
-        std::string phone;
+        std::string item;
+        std::string qty;
+        std::string cost;
         
-        std::cout << "Name: ";
-        std:: cin >> name;
+        std::cout << "Item: ";
+        std:: cin >> item;
 
-        std::cout << "Email: ";
-        std:: cin >> email;
+        std::cout << "Quantity: ";
+        std:: cin >> qty;
 
-        std::cout << "Phone: ";
-        std:: cin >> phone;
+        std::cout << "Cost: ";
+        std:: cin >> cost;
 
-        Person p1(name, email, phone);
+        Purchase p1(item, qty, cost);
 
-        std::cout << "Person " << p1.name() << " created." << std::endl;
-        std::cout << p1.email() << p1.phone() << std::endl;
+        std::cout << "Item " << p1.item() << " created." << std::endl;
+        std::cout << p1.qty() << p1.cost() << p1.total() << std::endl;
     } 
+    ////// END PURCHASE TEST ///////
+
+
+    /////// TEST FOR USER-CREATED PERSON //////
+
+    // char choice;
+
+    // std::cout << "Choice, A or M?";
+    // std::cin >> choice;
+
+    // if (choice == 'A') {
+    //     std::string name;
+    //     std::string email;
+    //     std::string phone;
+        
+    //     std::cout << "Name: ";
+    //     std:: cin >> name;
+
+    //     std::cout << "Email: ";
+    //     std:: cin >> email;
+
+    //     std::cout << "Phone: ";
+    //     std:: cin >> phone;
+
+    //     Person p1(name, email, phone);
+
+    //     std::cout << "Person " << p1.name() << " created." << std::endl;
+    //     std::cout << p1.email() << p1.phone() << std::endl;
+    // } 
 
     ////// END PERSON TEST ///////
 
