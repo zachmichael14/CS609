@@ -13,7 +13,7 @@ Employee::Employee(std::string _name, std::string _email, std::string _phone, do
   this->_salary = _salary;
 }
 
-double Employee::salary() const {
+double Employee::salary() {
   return _salary;
 }
 

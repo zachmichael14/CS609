@@ -17,13 +17,13 @@ public:
 
   // REMOVE: Method signatures for setters and getters to be implemented in person.cpp file
   // WHY PASS BY REFERENCE(&) FOR SETTERS? ALWAYS?
-  std::string name() const;
+  std::string name();
   void name(std::string _name);
 
-  std::string email() const;
+  std::string email();
   void email(std::string _email);
 
-  std::string phone() const;
+  std::string phone();
   void phone(std::string _phone);
 
 

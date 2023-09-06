@@ -15,7 +15,7 @@ public:
   // Parameterized constructor
   Employee(std::string _name, std::string _email, std::string _phone, double _salary);
 
-  double salary() const;
+  double salary();
   void salary(double salary);
 
 private:

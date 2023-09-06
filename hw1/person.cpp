@@ -10,7 +10,7 @@ Person::Person() {}
 Person::Person(std::string _name, std::string _email, std::string _phone) : _name(_name), _email(_email), _phone(_phone) {}
 
 // Get name
-std::string Person::name() const {
+std::string Person::name() {
   return _name;
 }
 
@@ -21,7 +21,7 @@ void Person::name(std::string _name)
 }
 
 // Get email
-std::string Person::email() const {
+std::string Person::email() {
   return _email;
 }
 
@@ -31,7 +31,7 @@ void Person::email(std::string _email) {
 }
 
 // Get phone
-std::string Person::phone() const {
+std::string Person::phone(){
   return _phone;
 }
 

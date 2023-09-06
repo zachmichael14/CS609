@@ -8,18 +8,18 @@
 
 Purchase::Purchase(std::string _item, int _qty, double _cost) : _item(_item), _qty(_qty), _cost(_cost) {}
 
-std::string Purchase::item() const {
+std::string Purchase::item() {
   return _item;
 }
 
-int Purchase::qty() const {
+int Purchase::qty() {
   return _qty;
 }
 
-double Purchase::cost() const {
+double Purchase::cost(){
   return _cost;
 }
 
-double Purchase::total() const {
+double Purchase::total() {
   return _cost * _qty;
 }
