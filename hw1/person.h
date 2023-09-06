@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////
 // File: person.h
-// Purpose: Class definition of a Person.
+// Purpose: Class definition of a person.
 ///////////////////////////////////////////////////////////////////////////
 #ifndef PERSON_H
 #define PERSON_H
@@ -13,11 +13,19 @@ public:
   Person() {};
 
   // Parameterized constructor
-  Person(std::string name, std::string email, std::string phone);
+  Person(std::string _name, std::string _email, std::string _phone);
 
-  // REMOVE: Method signatures to be implemented in person.cpp file
+  // REMOVE: Method signatures for setters and getters to be implemented in person.cpp file
+  // WHY PASS BY REFERENCE(&) FOR SETTERS? ALWAYS?
   std::string name() const;
-  void name(std::string _name);
+  void name(std::string& _name);
+
+  std::string email() const;
+  void email(std::string& _email);
+
+  std::string phone() const;
+  void phone(std::string& _phone);
+
 
 private:
   // REMOVE: Member variables
