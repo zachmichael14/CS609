@@ -6,7 +6,7 @@
 #include "person.h"
 
 // Constructors
-Person::Person();
+// Person::Person();
 Person::Person(std::string name, std::string email, std::string phone) : _name(name), _email(email), _phone(phone) {};
 
 // Get name
@@ -21,7 +21,7 @@ void Person::name(std::string name)
 }
 
 // Get email
-std::string Person::email() {
+std::string Person::email() const {
   return _email;
 }
 
@@ -31,11 +31,11 @@ void Person::email(std::string email) {
 }
 
 // Get phone
-std:string Person::phone() {
+std::string Person::phone() const {
   return _phone;
 }
 
 // Set phone
-void Person::phone(std:string phone) {
+void Person::phone(std::string phone) {
   this->_phone = phone;
 }
