@@ -9,6 +9,12 @@
 // Constructors
 Employee::Employee() : Person() {}
 
-Employee::Employee(std::string name, std::string email, std::string phone) : Person(name, email, phone) {}
+Employee::Employee(std::string _name, std::string _email, std::string _phone) : Person(_name, _email, _phone) {}
 
+double Employee::salary() {
+  return _salary;
+}
 
+void Employee::salary(double _salary) {
+  this->_salary = _salary;
+}
