@@ -11,12 +11,21 @@
 class Company
 {
 public:
+  // Constructor
   Company(std::string name);
 
-  std::string name() const;
-  void add_employee(Employee _employee)
+  // Getter
+  std::string name();
 
+  // Object adders
+  void add_employee(Employee _employee);
+  void add_customer(Customer _customer);
 
+  // Iterators
+  std::vector<Employee>::iterator employee_begin();
+  std::vector<Employee>::iterator employee_end();
+  std::vector<Customer>::iterator customer_begin();
+  std::vector<Customer>::iterator customer_end();
 
 private:
   std::vector<Employee>* _employees;
