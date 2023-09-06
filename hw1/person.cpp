@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////
 // File: person.cpp
-// Purpose: Implemenation of the person class.
+// Purpose: Implementation of the person class.
 ///////////////////////////////////////////////////////////////////////////
 #include <string>
 #include "person.h"
@@ -15,7 +15,7 @@ std::string Person::name() const {
 }
 
 // Set name
-void Person::name(std::string& _name) 
+void Person::name(std::string _name) 
 {
   this->_name = _name;
 }
@@ -26,7 +26,7 @@ std::string Person::email() const {
 }
 
 // Set email
-void Person::email(std::string& _email) {
+void Person::email(std::string _email) {
   this->_email = _email;
 }
 
@@ -36,6 +36,6 @@ std::string Person::phone() const {
 }
 
 // Set phone
-void Person::phone(std::string& _phone) {
+void Person::phone(std::string _phone) {
   this->_phone = _phone;
 }
