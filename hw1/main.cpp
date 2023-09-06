@@ -5,46 +5,134 @@
 #include "purchase.h"
 #include "customer.h"
 #include "employee.h"
+#include "company.h"
 
 
 
 int main() {
 
+    //////// TEST FOR USER-CREATED COMPANY, EMPLOYEE, AND CUSTOMER //////
+    // char choice;
+    // std::cout << "Choice, A or M?";
+    // std::cin >> choice;
+
+    // if (choice == 'A') {
+    //     std::string comp_name;
+
+    //     std::cout << "Company name: ";
+    //     std:: cin >> comp_name;
+
+    //     Company comp1(comp_name);
+
+    //     std::cout << "Company " << comp1.name() << " created" <<std::endl;
+
+    //     std::cout << "Add employee" << std::endl;
+    //     std::string e_name;
+    //     std::string e_email;
+    //     std::string e_phone;
+    //     double salary;
+        
+
+    //     std::cout << "Employee name: ";
+    //     std:: cin >> e_name;
+
+    //     std::cout << "Employee email: ";
+    //     std:: cin >> e_email;
+
+    //     std::cout << "Employee phone: ";
+    //     std:: cin >> e_phone;
+
+    //     std::cout << "Employee salary: ";
+    //     std:: cin >> salary;
+
+    //     Employee e1(e_name, e_email, e_phone, salary);
+
+    //     comp1.add_employee(e1);
+
+    //     std::cout << "Employee" << e1.name() << " added to company" << std::endl;
+
+    //     std::cout << "Add customer " << std::endl;
+
+    //     std::string c_name;
+    //     std::string c_email;
+    //     std::string c_phone;
+        
+
+    //     std::cout << "Customer name: ";
+    //     std:: cin >> c_name;
+
+    //     std::cout << "Customer email: ";
+    //     std:: cin >> c_email;
+
+    //     std::cout << "Customer phone: ";
+    //     std:: cin >> c_phone;
+
+    //     Customer c1(c_name, c_email, c_phone);
+
+    //     comp1.add_customer(c1);
+
+    //     std::cout << "Customer " << c1.name() << " added to company" << std::endl;
+
+    //     // Use the iterators to iterate through the customers
+    //     std::vector<Customer>::iterator c_begin = comp1.customer_begin();
+    //     std::vector<Customer>::iterator c_end = comp1.customer_end();
+        
+    //     std::vector<Employee>::iterator e_begin = comp1.employee_begin();
+    //     std::vector<Employee>::iterator e_end = comp1.employee_end();
+
+    
+    //     while (c_begin != c_end) {
+    //         Customer customer = *c_begin;
+    // //         // Access purchase data or perform operations
+    //         std::cout << "Customer: " << customer.name() << ", Email: " << customer.email() << ", Phone: " << customer.phone() << std::endl;
+        
+    //         ++c_begin; // Move to the next purchase
+    //     }
+
+
+    //     while (e_begin != e_end) {
+    //         Employee employee = *e_begin;
+    // //         // Access purchase data or perform operations
+    //         std::cout << "Employee: " << employee.name() << ", Email: " << employee.email() << ", Phone: " << employee.phone() << std::endl;
+        
+    //         ++e_begin; // Move to the next purchase
+    //     }
+
+    // }
+    ////// END COMPANY TEST ///////
 
     /////// TEST FOR USER-CREATED EMPLOYEE //////
-    char choice;
+    // char choice;
 
-    std::cout << "Choice, A or M?";
-    std::cin >> choice;
+    // std::cout << "Choice, A or M?";
+    // std::cin >> choice;
 
-    if (choice == 'A') {
-        std::string name;
-        std::string email;
-        std::string phone;
-        double salary;
+    // if (choice == 'A') {
+    //     std::string name;
+    //     std::string email;
+    //     std::string phone;
+    //     double salary;
         
-        std::cout << "Name: ";
-        std:: cin >> name;
+    //     std::cout << "Name: ";
+    //     std:: cin >> name;
 
-        std::cout << "Email: ";
-        std:: cin >> email;
+    //     std::cout << "Email: ";
+    //     std:: cin >> email;
 
-        std::cout << "Phone: ";
-        std:: cin >> phone;
+    //     std::cout << "Phone: ";
+    //     std:: cin >> phone;
 
-        // std::cout << "Salary: ";
-        // std::cin >> salary;
+    //     // std::cout << "Salary: ";
+    //     // std::cin >> salary;
 
-        // Employee e1(name, email, phone, salary);
-        Employee e1(name, email, phone, 50000.25);
+    //     // Employee e1(name, email, phone, salary);
+    //     Employee e1(name, email, phone, 50000.25);
 
-        std::cout << "Employee " << e1.name() << " created." << std::endl;
-        std::cout << e1.email() << e1.phone() << std::endl;
-        std::cout << e1.salary() << std::endl;
-    }
+    //     std::cout << "Employee " << e1.name() << " created." << std::endl;
+    //     std::cout << e1.email() << e1.phone() << std::endl;
+    //     std::cout << e1.salary() << std::endl;
+    // }
     ////// END EMPLOYEE TEST ///////
-
-
 
     //////// TEST FOR USER-CREATED CUSTOMER AND PURCHASE //////
     // char choice;
@@ -136,7 +224,6 @@ int main() {
     //     std::cout << p1.qty() << p1.cost() << p1.total() << std::endl;
     // }
     ////// END PURCHASE TEST ///////
-
 
     /////// TEST FOR USER-CREATED PERSON //////
     // char choice;
