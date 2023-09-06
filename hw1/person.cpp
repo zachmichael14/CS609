@@ -1,13 +1,13 @@
 ///////////////////////////////////////////////////////////////////////////
 // File: person.cpp
-// Purpose: Implemenation of the Person class.
+// Purpose: Implemenation of the person class.
 ///////////////////////////////////////////////////////////////////////////
 #include <string>
 #include "person.h"
 
-// Constructors
-// Person::Person();
-Person::Person(std::string name, std::string email, std::string phone) : _name(name), _email(email), _phone(phone) {};
+// Constructor
+Person::Person() {}
+Person::Person(std::string name, std::string email, std::string phone) : _name(name), _email(email), _phone(phone) {}
 
 // Get name
 std::string Person::name() const {
@@ -15,7 +15,7 @@ std::string Person::name() const {
 }
 
 // Set name
-void Person::name(std::string name) 
+void Person::name(std::string& name) 
 {
   this->_name = name;
 }
@@ -26,7 +26,7 @@ std::string Person::email() const {
 }
 
 // Set email
-void Person::email(std::string email) {
+void Person::email(std::string& email) {
   this->_email = email;
 }
 
@@ -36,6 +36,6 @@ std::string Person::phone() const {
 }
 
 // Set phone
-void Person::phone(std::string phone) {
+void Person::phone(std::string& phone) {
   this->_phone = phone;
 }
