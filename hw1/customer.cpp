@@ -2,7 +2,6 @@
 // File: customer.cpp
 // Purpose: Implemenation of the customer class.
 ///////////////////////////////////////////////////////////////////////////
-#include <iostream>
 #include <string>
 #include "customer.h"
 #include "person.h"
