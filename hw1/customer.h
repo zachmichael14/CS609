@@ -6,6 +6,7 @@
 #define CUSTOMER_H
 #include <vector>
 #include "purchase.h"
+#include "person.h"
 
 class Customer : public Person
 {
@@ -14,7 +15,7 @@ public:
   Customer();
   Customer(std::string _name, std::string _email, std::string _phone);
 
-  void add_purchase(Purchase purchase);
+  void add_purchase(const Purchase& purchase);
   std::vector<Purchase>::const_iterator purchase_begin();
   std::vector<Purchase>::const_iterator purchase_end();
 
