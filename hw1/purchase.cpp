@@ -5,7 +5,8 @@
 #include <string>
 #include "purchase.h"
 
-Purchase::Purchase(std::string item, int qty, double cost) : _item(item), _qty(qty), _cost(cost) {}
+
+Purchase::Purchase(std::string _item, int _qty, double _cost) : _item(_item), _qty(_qty), _cost(_cost) {}
 
 std::string Purchase::item() const {
   return _item;
