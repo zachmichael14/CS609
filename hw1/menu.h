@@ -17,7 +17,7 @@ public:
     virtual void add_item(Menu_Item *item);
 
     // Remove an item from the menu
-    virtual void remove_item(Menu_Item *item);
+    // virtual void remove_item(Menu_Item *item);
 
     // Run the menu
     virtual void run();
