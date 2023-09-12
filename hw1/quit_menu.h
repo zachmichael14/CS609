@@ -4,6 +4,7 @@
 ///////////////////////////////////////////////////////////////////////////
 #ifndef QUIT_H
 #define QUIT_H
+#include <string>
 #include "menu_item.h"
 
 class Quit_Menu : public Menu_Item
@@ -20,7 +21,7 @@ public:
 
     // Returns true if the quit function has been selected.
     virtual bool quit();
-    
+
 private:
     bool _quit;
     std::string _msg;
