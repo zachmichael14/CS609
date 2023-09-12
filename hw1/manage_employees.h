@@ -19,7 +19,7 @@ public:
   // Get text for the menu item
   virtual std::string label();
 
-  // Function to execute when this item is selected
+  // Function to execute when this menu item is selected
   virtual void selected();
 
 private:
