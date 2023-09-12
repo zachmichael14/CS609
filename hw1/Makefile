@@ -6,7 +6,7 @@ CXXFLAGS=-g
 
 BIN=companydb
 
-companydb: main.o person.o purchase.o customer.o employee.o company.o 
+companydb: main.o person.o purchase.o customer.o employee.o company.o manage_employees.o menu.o quit_menu.o
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 # Meta-target
