@@ -1,15 +1,36 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 #include "person.h"
 #include "purchase.h"
 #include "customer.h"
 #include "employee.h"
+#include "manage_employees.h"
 #include "company.h"
+#include "menu.h"
+#include "quit_menu.h"
 
 
 
 int main() {
+    std::vector<Employee> employees;
+
+    Menu menu;
+    Quit_Menu *quit = new Quit_Menu();
+    Manage_Employees *manage = new Manage_Employees(&employees);
+
+    menu.add_item(manage);
+    menu.add_item(quit);
+
+    while(not quit->quit()) {
+        menu.run();
+    }
+
+
+    delete quit;
+    delete manage;
+
 
     //////// TEST FOR USER-CREATED COMPANY, EMPLOYEE, AND CUSTOMER //////
     // char choice;
